@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row">
+
+    <div class="col-lg-8">
+
+        <h3 class="mt-4">{{article.title}}</h3>
+
+        
+        <p class="lead">
+          by
+          {{article.author.username}}
+        </p>
+
+        <hr>
+
+        <p>{{article.created_date}}</p>
+
+        <hr>
+
+        <p class="lead">
+            {{article.content|safe}}
+        </p>
+
+
+        <hr>
+
+</div>        
+
+{% endblock body %}
